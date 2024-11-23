@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hệ thống Quản lý Đặt chỗ</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hệ thống Quản lý Đặt chỗ</h1>
+
+            <!-- Form đặt chỗ -->
+            <div class="booking-form">
+                <h2>Đặt chỗ mới</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label>Tên khách hàng:</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Giờ:</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đặt chỗ</button>
+                </form>
+            </div>
+
+            <!-- Danh sách đặt chỗ -->
+            <div class="bookings-list">
+                <h2>Danh sách đặt chỗ</h2>
+                <table id="bookingsTable">
+                    <thead>
+                        <tr>
+                            <th>Tên khách hàng</th>
+                            <th>Ngày</th>
+                            <th>Giờ</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+    </html>
